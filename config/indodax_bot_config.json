@@ -1,0 +1,18 @@
+{
+  "checks_per_day": 6,
+  "top_n_volume": 30,
+  "min_target_pct": 2.0,
+  "trailing_stop_pct": 4.0,
+  "hard_stop_loss_pct": 5.0,
+  "max_hold_days": 5,
+  "risk_per_trade_pct": 10.0,
+  "allow_maintenance": false,
+  "exclude_symbols": [],
+  "mode": "PAPER",
+  "start_cash_idr": 500000,
+  "max_positions": 5,
+  "max_new_positions_per_tick": 1,
+  "parabolic_threshold_pct": 25.0,
+  "bollinger_upper_avoid": true,
+  "scan_interval_min": 240
+}
