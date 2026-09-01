@@ -11,10 +11,23 @@ indodax-trading-suite/
 ├── README.md
 ├── scripts/
 │   ├── strategy_bot.py     # Engine utama: SCREEN -> SCORE -> ENTRY -> EXIT (PAPER default)
+│   ├── hybrid_bot.py       # Bot hybrid (screening + eksekusi, state SQLite)
+│   ├── live_bot.py         # Live tick bot (order nyata, terkunci env)
+│   ├── adaptive_bot.py     # Bot adaptif (menyesuaikan parameter dari hasil)
 │   ├── analyst_bot.py      # Technical analyst READ-ONLY (skor 30 koin, rekomendasi, posisi)
 │   ├── screener.py         # Screening sekali jalan: top-30 + rekomendasi
 │   ├── idx_v2_client.py    # Client Trade API V2 (HMAC-SHA256, X-APIKEY + Sign)
 │   ├── hold_analysis.py    # Analisis kandidat hold 1 bulan (daily, RSI/EMA/vol)
+│   ├── backtest_fix.py     # Backtest dengan koreksi slippage/fee
+│   ├── paper_bot.py        # Paper trading bot
+│   ├── trader_bot.py       # Bot trader (state-based)
+│   ├── sweep.py            # Sweep screening cepat
+│   ├── compare_strategies.py  # Bandingkan hasil antar strategi
+│   ├── walk_forward.py     # Walk-forward optimization
+│   ├── simulate_2pct.py    # Simulasi target 2%
+│   ├── buat_laporan_simulasi.py  # Generator laporan simulasi
+│   ├── place_order.py      # Utilitas order manual (test)
+│   ├── verify.py           # Verifikasi setup
 │   ├── sim_until_5am.sh    # Template simulasi PAPER sampai deadline tertentu
 │   └── requirements.txt
 ├── config/

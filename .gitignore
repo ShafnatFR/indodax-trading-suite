@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Runtime state & logs (jangan di-commit)
+*_state.json
+*_out.json
+*_err.log
+*.log
+analyst_snapshot_*.json
+analyst_cron_*.json
+screen_*.json
+tick*_out.json
+tick*_err.log
+screening_*.json
+sim_*.log
+live_cron_report.txt
+llm_debug.log
+adaptive_state.json
+hybrid_state.json
+hybrid_tick_out.json
+strategy_state.json
+trader_state.json
+live_state.json
+sim_status_final.json
+
+# Secrets
+.env
+*.env
+config/*.json
